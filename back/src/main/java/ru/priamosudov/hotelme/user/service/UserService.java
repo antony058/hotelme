@@ -5,6 +5,4 @@ import ru.priamosudov.hotelme.user.domain.User;
 public interface UserService {
 
     User getUserByUsername(String username);
-
-    User addUser(User user);
 }

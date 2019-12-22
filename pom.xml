@@ -19,6 +19,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<modelmapper.version>2.3.5</modelmapper.version>
 	</properties>
 
 	<dependencies>
@@ -33,7 +34,22 @@
 			<version>3.0.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.modelmapper</groupId>
+				<artifactId>modelmapper</artifactId>
+				<version>${modelmapper.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<modules>
 		<module>core</module>
