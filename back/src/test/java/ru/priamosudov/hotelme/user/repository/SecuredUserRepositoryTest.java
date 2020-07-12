@@ -33,7 +33,7 @@ class SecuredUserRepositoryTest extends BaseUserRepositoryTest {
     }
 
     private void checkCommonUserData(SecuredUser actualUser, String username) {
-        checkCommonUserData((BaseUser) actualUser, username);
+        super.checkCommonUserData(actualUser, username);
         assertEquals("User password is not matching", COMMON_USER_PASSWORD, actualUser.getPassword());
     }
 }

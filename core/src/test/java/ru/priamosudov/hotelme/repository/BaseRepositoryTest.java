@@ -11,7 +11,6 @@ import ru.priamosudov.core.common.domain.DomainModel;
 import java.io.Serializable;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@TestPropertySource(locations = "classpath:application-test.properties")
 @DataJpaTest(showSql = false)
 public abstract class BaseRepositoryTest {
 
